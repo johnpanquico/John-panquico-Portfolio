@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | John Panquico</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="background-design">
+        <div class="blob blob-one"></div>
+        <div class="blob blob-two"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <a class="logo" href="index.html">
+            <span class="logo-mark">JMP</span>
+            <span>John Panquico</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header reveal">
+        <p class="eyebrow">Portfolio Work</p>
+        <h1>Projects</h1>
+        <p>Featured projects from my web application and game development portfolio.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-title reveal">
+            <p class="eyebrow">Featured Project</p>
+            <h2>KHRONOS Civil Registry System</h2>
+            <p>
+                Online Local Civil Registry web portal for certificate applications and processing.
+            </p>
+        </div>
+
+        <div class="featured-project reveal">
+            <div class="featured-project-image">
+                <div class="project-slider" id="khronosSlider">
+                    <div class="slide active">
+                        <img src="images/khronos-login.png" alt="KHRONOS login page" />
+                        <div class="image-caption">1. Login Page / Client Access Portal</div>
+                        <button type="button" class="view-image-btn" onclick="openProjectImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/khronos-application-form-1.png" alt="KHRONOS application form page" />
+                        <div class="image-caption">2. Application Form / Main Application Page</div>
+                        <button type="button" class="view-image-btn" onclick="openProjectImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/khronos-application-form-2.png" alt="KHRONOS application form details" />
+                        <div class="image-caption">3. Application Form / Applicant and Child Information</div>
+                        <button type="button" class="view-image-btn" onclick="openProjectImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/khronos-requirements.png" alt="KHRONOS requirements page" />
+                        <div class="image-caption">4. Requirements / Document Upload Section</div>
+                        <button type="button" class="view-image-btn" onclick="openProjectImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/khronos-checkout.png" alt="KHRONOS checkout page" />
+                        <div class="image-caption">5. Checkout / Payment Information Page</div>
+                        <button type="button" class="view-image-btn" onclick="openProjectImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/khronos-confirm-application.png" alt="KHRONOS confirm application page" />
+                        <div class="image-caption">6. Confirm Application / Summary Page</div>
+                        <button type="button" class="view-image-btn" onclick="openProjectImage(this)">View Large Image</button>
+                    </div>
+
+                    <button class="slider-btn prev" onclick="moveProjectSlide(-1)">❮</button>
+                    <button class="slider-btn next" onclick="moveProjectSlide(1)">❯</button>
+                </div>
+
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentProjectSlide(1)"></span>
+                    <span class="dot" onclick="currentProjectSlide(2)"></span>
+                    <span class="dot" onclick="currentProjectSlide(3)"></span>
+                    <span class="dot" onclick="currentProjectSlide(4)"></span>
+                    <span class="dot" onclick="currentProjectSlide(5)"></span>
+                    <span class="dot" onclick="currentProjectSlide(6)"></span>
+                </div>
+
+                <div class="slider-thumbnails">
+                    <img class="thumb active" src="images/khronos-login.png" alt="Login thumbnail" onclick="currentProjectSlide(1)" />
+                    <img class="thumb" src="images/khronos-application-form-1.png" alt="Application form thumbnail 1" onclick="currentProjectSlide(2)" />
+                    <img class="thumb" src="images/khronos-application-form-2.png" alt="Application form thumbnail 2" onclick="currentProjectSlide(3)" />
+                    <img class="thumb" src="images/khronos-requirements.png" alt="Requirements thumbnail" onclick="currentProjectSlide(4)" />
+                    <img class="thumb" src="images/khronos-checkout.png" alt="Checkout thumbnail" onclick="currentProjectSlide(5)" />
+                    <img class="thumb" src="images/khronos-confirm-application.png" alt="Confirm application thumbnail" onclick="currentProjectSlide(6)" />
+                </div>
+            </div>
+
+            <div class="featured-project-content">
+                <div class="project-badge">Web Application</div>
+                <h3>KHRONOS Civil Registry System</h3>
+
+                <p>
+                    KHRONOS is an online Local Civil Registry web portal designed for applying for
+                    civil registry certificates, including birth certificates, death certificates,
+                    marriage certificates, and other certificate-related requests.
+                </p>
+
+                <p>
+                    The system has two main sides: the <strong>client side</strong> and the
+                    <strong>admin side</strong>. The client side allows applicants to submit certificate
+                    applications online, encode required information, upload supporting documents, and
+                    proceed with the application process. The admin side is intended for authorized
+                    civil registry personnel who review, validate, approve, and process the submitted
+                    certificate applications.
+                </p>
+
+                <div class="tech-pills project-tech">
+                    <span>C#</span>
+                    <span>ASP.NET Core MVC</span>
+                    <span>SQL Server</span>
+                    <span>REST API</span>
+                    <span>Bootstrap 5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section equatia-section">
+        <div class="section-title reveal">
+            <p class="eyebrow">Game Development Project</p>
+            <h2>Equatia</h2>
+            <p>
+                A mathematics-themed role-playing game developed as a freelance client project.
+            </p>
+        </div>
+
+        <div class="featured-project reveal">
+            <div class="featured-project-image">
+                <div class="project-slider" id="equatiaSlider">
+                    <div class="slide active">
+                        <img src="images/equatia-01-main-menu.png" alt="Equatia main menu screen" />
+                        <div class="image-caption">1. Main Menu / Title Screen</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/equatia-02-new-game.png" alt="Equatia new game screen" />
+                        <div class="image-caption">2. New Game / Player Name Input</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/equatia-03-character-selection.png" alt="Equatia character selection screen" />
+                        <div class="image-caption">3. Character Selection / Character Purchase Screen</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/equatia-04-town-gameplay.png" alt="Equatia in-game town gameplay" />
+                        <div class="image-caption">4. Town Gameplay / Exploration Scene</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/equatia-05-magister-terra.png" alt="Equatia quest interaction with Magister Terra" />
+                        <div class="image-caption">5. Quest Interaction / Magister Terra</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/equatia-06-dialogue-scene.png" alt="Equatia dialogue scene with NPCs" />
+                        <div class="image-caption">6. Dialogue Scene / Story Interaction</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/equatia-07-math-question.png" alt="Equatia mathematics question gameplay screen" />
+                        <div class="image-caption">7. Mathematics Challenge / Educational Gameplay</div>
+                        <button type="button" class="view-image-btn" onclick="openEquatiaImage(this)">View Large Image</button>
+                    </div>
+
+                    <button class="slider-btn prev" onclick="moveEquatiaSlide(-1)">❮</button>
+                    <button class="slider-btn next" onclick="moveEquatiaSlide(1)">❯</button>
+                </div>
+
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentEquatiaSlide(1)"></span>
+                    <span class="dot" onclick="currentEquatiaSlide(2)"></span>
+                    <span class="dot" onclick="currentEquatiaSlide(3)"></span>
+                    <span class="dot" onclick="currentEquatiaSlide(4)"></span>
+                    <span class="dot" onclick="currentEquatiaSlide(5)"></span>
+                    <span class="dot" onclick="currentEquatiaSlide(6)"></span>
+                    <span class="dot" onclick="currentEquatiaSlide(7)"></span>
+                </div>
+
+                <div class="slider-thumbnails seven-thumbs">
+                    <img class="thumb active" src="images/equatia-01-main-menu.png" alt="Equatia title screen thumbnail" onclick="currentEquatiaSlide(1)" />
+                    <img class="thumb" src="images/equatia-02-new-game.png" alt="Equatia new game thumbnail" onclick="currentEquatiaSlide(2)" />
+                    <img class="thumb" src="images/equatia-03-character-selection.png" alt="Equatia character selection thumbnail" onclick="currentEquatiaSlide(3)" />
+                    <img class="thumb" src="images/equatia-04-town-gameplay.png" alt="Equatia town gameplay thumbnail" onclick="currentEquatiaSlide(4)" />
+                    <img class="thumb" src="images/equatia-05-magister-terra.png" alt="Equatia quest thumbnail" onclick="currentEquatiaSlide(5)" />
+                    <img class="thumb" src="images/equatia-06-dialogue-scene.png" alt="Equatia dialogue thumbnail" onclick="currentEquatiaSlide(6)" />
+                    <img class="thumb" src="images/equatia-07-math-question.png" alt="Equatia mathematics challenge thumbnail" onclick="currentEquatiaSlide(7)" />
+                </div>
+            </div>
+
+            <div class="featured-project-content">
+                <div class="project-badge">Game Development</div>
+                <h3>Equatia</h3>
+
+                <p>
+                    <strong>Equatia</strong> is one of my freelance client projects developed to support a
+                    research study. It is a mathematics-based role-playing game (RPG) designed to combine
+                    interactive gameplay with educational content.
+                </p>
+
+                <p>
+                    The game allows players to explore the environment, interact with non-player characters,
+                    complete quests, and answer mathematics-related questions as part of the core gameplay
+                    experience. It was designed to make learning more engaging through adventure-style
+                    progression and challenge-based activities.
+                </p>
+
+                <p>
+                    For this project, I used <strong>Unity</strong> and <strong>C#</strong> for development,
+                    <strong>Blender</strong> for selected design assets, and <strong>JSON</strong> as a
+                    lightweight data-saving structure.
+                </p>
+
+                <div class="tech-pills project-tech">
+                    <span>Unity</span>
+                    <span>C#</span>
+                    <span>Blender</span>
+                    <span>JSON</span>
+                    <span>RPG</span>
+                    <span>Educational Game</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-details-grid reveal">
+            <div class="project-info-card">
+                <h3>Project Highlights</h3>
+                <ul>
+                    <li>Freelance client project created for research-related use.</li>
+                    <li>Mathematics-based RPG with educational gameplay elements.</li>
+                    <li>Quest system with story interaction and NPC dialogue.</li>
+                    <li>Character selection, exploration, and challenge-based progression.</li>
+                    <li>Question-and-answer gameplay to reinforce mathematics learning.</li>
+                </ul>
+            </div>
+
+            <div class="project-info-card">
+                <h3>My Role and Contribution</h3>
+                <ul>
+                    <li>Developed the game using Unity and C#.</li>
+                    <li>Implemented gameplay flow, interfaces, and interaction systems.</li>
+                    <li>Used Blender for selected design and visual assets.</li>
+                    <li>Applied JSON-based saving structure for lightweight game data handling.</li>
+                    <li>Customized the game based on the client’s project and research needs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="imageModal" class="image-modal">
+        <button type="button" class="modal-close" onclick="closeProjectImage()">×</button>
+        <button type="button" class="modal-nav modal-prev" onclick="moveModalImage(-1)">❮</button>
+
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Large project screenshot" />
+            <div id="modalCaption" class="modal-caption"></div>
+        </div>
+
+        <button type="button" class="modal-nav modal-next" onclick="moveModalImage(1)">❯</button>
+    </div>
+
+
+    <div id="equatiaImageModal" class="image-modal">
+        <button type="button" class="modal-close" onclick="closeEquatiaImage()">×</button>
+        <button type="button" class="modal-nav modal-prev" onclick="moveEquatiaModalImage(-1)">❮</button>
+
+        <div class="modal-content">
+            <img id="equatiaModalImage" src="" alt="Large Equatia screenshot" />
+            <div id="equatiaModalCaption" class="modal-caption"></div>
+        </div>
+
+        <button type="button" class="modal-nav modal-next" onclick="moveEquatiaModalImage(1)">❯</button>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <h3>John Mendoza Panquico</h3>
+            <p>Programmer • Web App Developer • College Teacher • Freelance Game/Web Developer</p>
+        </div>
+
+        <p>© 2026 John Panquico. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
